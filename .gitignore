@@ -1,2 +1,10 @@
 git/gitconfig.local.symlink
 Brewfile.lock.json
+atom.symlink/.node-gyp
+atom.symlink/.storage
+atom.symlink/compile-cache/
+atom.symlink/packages
+atom.symlink/storage
+atom.symlink/themes
+
+git/gitconfig.symlink
