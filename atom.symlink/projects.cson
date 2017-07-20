@@ -1,0 +1,60 @@
+[
+  {
+    title: "Nissan Project"
+    group: "cdt-work"
+    paths: [
+      "~/cdt-nissan-2017"
+    ]
+  }
+  {
+    title: "cdt-work"
+    group: "cdt-work"
+    paths: [
+      "~/cdt-work"
+    ]
+    icon: "icon-server"
+  }
+  {
+    title: "uni-work"
+    group: "uni-work"
+    paths: [
+      "~/uni-work"
+    ]
+  }
+  {
+    title: "Dotfiles"
+    paths: [
+      "~/dotfiles"
+    ]
+    icon: "icon-sync"
+  }
+  {
+    title: "Cloud Performance"
+    paths: [
+      "~/cloud-performance"
+    ]
+    icon: "icon-server"
+  }
+  {
+    title: "Microbit Samples"
+    paths: [
+      "~/microbit-samples"
+    ]
+  }
+  {
+    title: "Haskell"
+    paths: [
+      "~/Haskell/di-haskell"
+      "~/Haskell/haskell-learn"
+      "~/Haskell/Notes"
+    ]
+  }
+  {
+    title: "CSC8104"
+    paths: [
+      "~/csc8104/csc8104-doc"
+      "~/csc8104/csc8104-model-hfirth"
+      "~/csc8104/jboss-wfk-quickstarts"
+    ]
+  }
+]
