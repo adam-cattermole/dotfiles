@@ -22,13 +22,6 @@
     ]
   }
   {
-    title: "Dotfiles"
-    paths: [
-      "~/dotfiles"
-    ]
-    icon: "icon-sync"
-  }
-  {
     title: "Cloud Performance"
     paths: [
       "~/cloud-performance"
@@ -55,6 +48,15 @@
       "~/csc8104/csc8104-doc"
       "~/csc8104/csc8104-model-hfirth"
       "~/csc8104/jboss-wfk-quickstarts"
+      "~/csc8104/notes"
     ]
+  }
+  {
+    title: "Dotfiles"
+    paths: [
+      "~/dotfiles-initial"
+      "~/.dotfiles"
+    ]
+    icon: "icon-sync"
   }
 ]
