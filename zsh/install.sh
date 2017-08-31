@@ -6,6 +6,7 @@ if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
   fi
   # Set the default shell to zsh if it isn't currently set to zsh
   if [[ ! $(echo $SHELL) == $(which zsh) ]]; then
+    sudo sh -c "echo $(which zsh) >> /etc/shells"
     chsh -s $(which zsh)
   fi
 else
