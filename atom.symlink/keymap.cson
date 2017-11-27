@@ -30,3 +30,8 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'atom-text-editor[data-grammar~="haskell"]':
+  'ctrl-alt-t': 'haskell-ghc-mod:show-type'
+  'ctrl-alt-i': 'haskell-ghc-mod:show-info'
+  'ctrl-alt-T': 'haskell-ghc-mod:insert-type'

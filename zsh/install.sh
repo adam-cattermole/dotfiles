@@ -8,7 +8,7 @@ if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
   fi
   # Set the default shell to zsh if it isn't currently set to zsh
-  if [[ ! $(echo $SHELL) == $(which zsh) ]]; then
+  if [[ ! $(echo $SHELL) == $(whereis zsh) ]]; then
     sudo sh -c "echo $(which zsh) >> /etc/shells"
     chsh -s $(which zsh)
   fi
