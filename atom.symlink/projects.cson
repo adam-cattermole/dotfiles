@@ -39,7 +39,8 @@
     paths: [
       "~/Haskell/di-haskell"
       "~/Haskell/haskell-learn"
-      "~/Haskell/Notes"
+      "~/Haskell/phd-research"
+      "~/Haskell/benchmarks"
     ]
   }
   {
@@ -48,7 +49,11 @@
       "~/csc8104/csc8104-doc"
       "~/csc8104/csc8104-model-hfirth"
       "~/csc8104/jboss-wfk-quickstarts"
+      "~/csc8104/csc8104-assignment"
+      "~/csc8104/enterprise-middleware-coursework"
       "~/csc8104/notes"
+      "~/csc8104/csc8104-states"
+      "~/csc8104/csc8104-instances"
     ]
   }
   {

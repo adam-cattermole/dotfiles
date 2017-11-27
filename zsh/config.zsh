@@ -31,7 +31,7 @@ DEFAULT_USER=`whoami`
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow pip osx cabal)
+plugins=(git git-flow pip cabal tmux)
 
 # don't expand aliases _before_ completion has finished
 #   like: git comm-[tab]
