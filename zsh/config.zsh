@@ -5,6 +5,8 @@ autoload -U $DOT/functions/*(:t)
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
+DISABLE_AUTO_UPDATE=true
+ZSH_COMPDUMP=~/.zcompdump
 
 setopt NO_BG_NICE # don't nice background tasks
 setopt NO_LIST_BEEP
@@ -32,6 +34,7 @@ DEFAULT_USER=`whoami`
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git git-flow pip cabal tmux)
+# plugins=()
 
 # don't expand aliases _before_ completion has finished
 #   like: git comm-[tab]

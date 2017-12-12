@@ -11,22 +11,20 @@ then
 fi
 
 # all of our zsh files
+# Globbing for atom.symlink is slow - extended excluding atom folder is fast
 typeset -U config_files
-config_files=($DOT/**/*.zsh)
+setopt EXTENDED_GLOB
+config_files=($DOT/(^atom.symlink/)#*.zsh)
 
 # load the path files
-#echo "Path files"
 for file in ${(M)config_files:#*/path.zsh}
 do
-#  echo $file
-  source $file
+ source $file
 done
 
 # load everything but the path and completion files
-#echo "Other files"
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
 do
-#  echo $file
   source $file
 done
 
@@ -35,16 +33,16 @@ done
 #compinit
 
 autoload -Uz compinit
-if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
-  compinit
+if [[ ! -f $ZSH_COMPDUMP ]] || [ $(date +'%j') != $(stat -f '%Sm' -t '%j' $ZSH_COMPDUMP) ]; then
+  compinit -i -d "${ZSH_COMPDUMP}"
 else
-  compinit -C
+ compinit -C
 fi
 
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
 do
- source $file
+  source $file
 done
 
 unset config_files
