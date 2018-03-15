@@ -8,5 +8,13 @@ atom.symlink/storage
 atom.symlink/themes
 atom.symlink/blob-store
 atom.symlink/recovery
+atom.symlink/split-diff
+atom.symlink/github.cson
+atom.symlink/config.cson
 
 git/gitconfig.local.symlink
+
+ghc.symlink/ghci_history
+ghc.symlink/*/*
+
+node/*
