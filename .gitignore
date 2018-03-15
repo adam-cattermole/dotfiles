@@ -12,3 +12,7 @@ atom/atom.symlink/themes
 atom/atom.symlink/blob-store
 atom/atom.symlink/recovery
 
+ghc.symlink/ghci_history
+ghc.symlink/*/*
+
+node/*
