@@ -28,17 +28,25 @@ atom-text-editor {
 }
 
 // To style other content in the text editor's shadow DOM, use the ::shadow expression
-atom-text-editor::shadow .cursor {
-  // border-color: red;
+atom-text-editor::shadow {
+  .horizontal-scrollbar .vertical-scrollbar {
+    opacity: 0.1;
+    height: 0.25rem;
+    width:0.25rem;
+  }
 }
 
 .scrollbars-visible-always {
-    .tree-view-scroller {
-        &::-webkit-scrollbar {
-            display: none;
-        }
-        &:hover::-webkit-scrollbar {
-            display: block;
-        }
+  .tree-view {
+    &::-webkit-scrollbar {
+      display: none;
+      width: 0.25rem;
+      height: 0.25rem;
     }
+    &:hover::-webkit-scrollbar {
+      display: block;
+    }
+  }
+
+
 }

@@ -38,11 +38,13 @@
     title: "Haskell"
     paths: [
       "~/Haskell/di-haskell"
+      "~/Haskell/deployment"
+      "~/Haskell/di-haskell-old"
       "~/Haskell/haskell-learn"
       "~/Haskell/phd-research"
       "~/Haskell/benchmarks"
       "~/Haskell/backup-di-haskell"
-      "~/Haskell/di-haskell-old"
+      "~/Haskell/phd-work"
     ]
   }
   {

@@ -33,6 +33,12 @@ Plugin 'L9'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+" Show tabs with 4 spaces width
+set tabstop=4
+" When indenting with '>' use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
