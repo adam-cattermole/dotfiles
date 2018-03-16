@@ -27,13 +27,9 @@ atom-text-editor {
   // background-color: hsl(180, 24%, 12%);
 }
 
-// To style other content in the text editor's shadow DOM, use the ::shadow expression
-atom-text-editor::shadow {
-  .horizontal-scrollbar .vertical-scrollbar {
-    opacity: 0.1;
-    height: 0.25rem;
-    width:0.25rem;
-  }
+// To style other content in the text editor's shadow DOM, use the ::shadow expression (deprecated)
+atom-text-editor.editor {
+  // color: red;
 }
 
 .scrollbars-visible-always {
