@@ -26,7 +26,8 @@ setopt HIST_REDUCE_BLANKS
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 DEFAULT_USER=`whoami`
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
@@ -35,10 +36,73 @@ DEFAULT_USER=`whoami`
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git git-flow pip cabal tmux)
 # plugins=()
-
 # don't expand aliases _before_ completion has finished
 #   like: git comm-[tab]
 #setopt complete_aliases
+
+### powerlevel9k configuration
+
+# Overall
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs command_execution_time)
+POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=''
+POWERLEVEL9K_RIGHT_SUBSEGMENT_SEPARATOR=''
+POWERLEVEL9K_MODE='nerdfont-complete'
+
+# Home
+POWERLEVEL9K_HOME_ICON=''
+POWERLEVEL9K_HOME_SUB_ICON=''
+POWERLEVEL9K_FOLDER_ICON=''
+
+# Time
+POWERLEVEL9K_TIME_BACKGROUND='clear'
+POWERLEVEL9K_TIME_FOREGROUND='blue'
+# POWERLEVEL9K_TIME_ICON='\uF34A'
+# POWERLEVEL9K_TIME_FORMAT='%D{%H:%M:%S} \uF43A'
+POWERLEVEL9K_TIME_FORMAT='%D{%H:%M:%S} \uE385'
+
+
+# Status
+POWERLEVEL9K_STATUS_VERBOSE=false
+POWERLEVEL9K_STATUS_OK_IN_NON_VERBOSE=true
+POWERLEVEL9K_STATUS_OK_BACKGROUND='clear'
+POWERLEVEL9K_STATUS_OK_VISUAL_IDENTIFIER_COLOR='green'
+POWERLEVEL9K_STATUS_ERROR_BACKGROUND='clear'
+POWERLEVEL9K_STATUS_ERROR_VISUAL_IDENTIFIER_COLOR='red'
+
+# Command Execution Time
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='clear'
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='yellow'
+POWERLEVEL9K_EXECUTION_TIME_ICON='\uFA1E'
+
+
+# VCS
+POWERLEVEL9K_VCS_GIT_HOOKS=(vcs-detect-changes git-aheadbehind git-remotebranch git-tagname)
+
+POWERLEVEL9K_VCS_GIT_ICON=''
+POWERLEVEL9K_VCS_GIT_GITHUB_ICON=''
+POWERLEVEL9K_VCS_BRANCH_ICON='\uE725 '
+POWERLEVEL9K_VCS_UNSTAGED_ICON='\u25CF'
+POWERLEVEL9K_VCS_STAGED_ICON='\u271A'
+POWERLEVEL9K_VCS_UNTRACKED_ICON=''
+POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON=''
+POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\UF176'
+
+# '\uE777' - h
+# '\uFCD2' - r
+
+# POWERLEVEL9K_VCS_CLEAN_FOREGROUND='blue'
+POWERLEVEL9K_VCS_CLEAN_BACKGROUND='green'
+# POWERLEVEL9K_VCS_OUTGOING_CHANGES_BACKGROUND='yellow'
+# POWERLEVEL9K_VCS_INCOMING_CHANGES_BACKGROUND='yellow'
+# POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='yellow'
+POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='yellow'
+# POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='red'
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='yellow'
+# POWERLEVEL9K_VCS_AHEAD_BACKGROUND='yellow'
+
+
+
 
 #bindkey '^[^[[D' backward-word
 #bindkey '^[^[[C' forward-word
