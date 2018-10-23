@@ -37,14 +37,23 @@
   {
     title: "Haskell"
     paths: [
-      "~/Haskell/di-haskell"
+      "~/Haskell/striot"
+      "~/Desktop/haskell-hash-test"
+      "~/Desktop/haskell-kafka"
+      "~/Desktop/haskell-msgpack"
+      "~/Desktop/haskell-rmq"
+      "~/Desktop/haskell-amq"
+      "~/Desktop/haskell-wsk-test"
+      "~/Desktop/striot-maybe"
+      "~/Desktop/test-thread-unagi"
+      "~/Haskell/backup-di-haskell"
+      "~/Haskell/benchmarks"
       "~/Haskell/deployment"
-      "~/Haskell/di-haskell-old"
       "~/Haskell/haskell-learn"
       "~/Haskell/phd-research"
-      "~/Haskell/benchmarks"
-      "~/Haskell/backup-di-haskell"
       "~/Haskell/phd-work"
+      "~/openwhisk"
+      "~/Desktop/haskell-amq-mqtt"
     ]
   }
   {
