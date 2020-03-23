@@ -27,14 +27,14 @@ setopt HIST_REDUCE_BLANKS
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="agnoster"
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 DEFAULT_USER=`whoami`
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow pip cabal tmux)
+plugins=(pip cabal tmux zsh-autosuggestions)
 # plugins=()
 # don't expand aliases _before_ completion has finished
 #   like: git comm-[tab]
@@ -101,8 +101,12 @@ POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='yellow'
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='yellow'
 # POWERLEVEL9K_VCS_AHEAD_BACKGROUND='yellow'
 
+# ZSH-TMUX Settings
+ZSH_TMUX_AUTOSTART=true
 
-
+# zsh-autosuggestions
+#bindkey '^[[[CT' autosuggest-accept
+#bindkey '^[[[CE' autosuggest-execute
 
 #bindkey '^[^[[D' backward-word
 #bindkey '^[^[[C' forward-word
