@@ -1,4 +1,4 @@
-set nocompatible              " be iMproved, required
+:set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -16,6 +16,11 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
+Plugin 'itchyny/lightline.vim'
+Plugin 'tpope/vim-eunuch'
+Plugin 'scrooloose/nerdtree'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/syntastic'
 " Git plugin not hosted on GitHub
 " Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
@@ -52,6 +57,10 @@ set expandtab
 " Put your non-Plugin stuff after this line
 syntax on
 set number
+set laststatus=2
+" Configure nerdtree
+map <C-n> :NERDTreeToggle<CR>
+" configure lightline
 " Configure UI {
 "set term=screen-256color
 "set t_Co=256
