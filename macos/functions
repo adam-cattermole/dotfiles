@@ -5,5 +5,5 @@ trash() {
 }
 
 empty_trash() {
-    rm -rf ~/.Trash/*
+    rm -rf $HOME/.Trash/*
 }
