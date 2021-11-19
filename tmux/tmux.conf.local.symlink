@@ -345,6 +345,9 @@ set -g status-interval 1
 # change repeat-time
 set -sg repeat-time 0
 
+# clear history
+bind -n C-k send-keys -R \; clear-history \; send-keys "Enter"
+
 # unbind apple-left as <prefix>
 #unbind Cmd-Left
 
