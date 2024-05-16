@@ -34,7 +34,18 @@ DEFAULT_USER=`whoami`
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(pip cabal tmux zsh-autosuggestions)
+plugins=(
+    archlinux
+    colorize
+    direnv
+    docker
+    gh
+    history-substring-search
+    kubectl
+    kubectx
+    tmux
+    zsh-autosuggestions
+)
 # plugins=()
 # don't expand aliases _before_ completion has finished
 #   like: git comm-[tab]
@@ -114,3 +125,8 @@ ZSH_TMUX_AUTOSTART=true
 #bindkey '^[[5C' end-of-line
 #bindkey '^[[3~' delete-char
 #bindkey '^?' backward-delete-char
+#HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='fg=white,bold'
+#HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='fg=white,bold'
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
