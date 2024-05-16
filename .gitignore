@@ -1,18 +1,6 @@
 git/gitconfig.symlink
 git/gitconfig.local.symlink
 Brewfile.lock.json
-atom/atom.symlink/.apm
-atom/atom.symlink/.node-gyp
-atom/atom.symlink/.storage
-atom/atom.symlink/blob-store
-atom/atom.symlink/compile-cache/
-atom/atom.symlink/packages
-atom/atom.symlink/storage
-atom/atom.symlink/themes
-atom/atom.symlink/blob-store
-atom/atom.symlink/recovery
 
 ghc.symlink/ghci_history
 ghc.symlink/*/*
-
-node/*
