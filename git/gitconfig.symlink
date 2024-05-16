@@ -28,9 +28,14 @@
         # Setting to git 2.0 default to suppress warning message
         default = simple
 [credential]
-	helper = osxkeychain
+	helper = store
 [diff "spaceman-diff"]
   command = /opt/homebrew/bin/spaceman-diff
 
 [init]
 	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
