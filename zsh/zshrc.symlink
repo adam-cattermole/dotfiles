@@ -1,9 +1,9 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-#fi
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
 # shortcut to this dotfiles path is $DOT
 export DOT=$HOME/.dotfiles
@@ -19,10 +19,8 @@ then
 fi
 
 # all of our zsh files
-# Globbing for atom.symlink is slow - extended excluding atom folder is fast
 typeset -U config_files
-setopt EXTENDED_GLOB
-config_files=($DOT/(^atom.symlink/)#*.zsh)
+config_files=($DOT/**/*.zsh)
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
