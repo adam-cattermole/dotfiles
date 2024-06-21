@@ -1,14 +1,14 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
 
 # shortcut to this dotfiles path is $DOT
 export DOT=$HOME/.dotfiles
-export ZSH=$HOME/.oh-my-zsh
-export TERM=xterm-256color
+# export ZSH=$HOME/.oh-my-zsh
+# export TERM=xterm-256color
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -54,22 +54,6 @@ done
 
 unset config_files
 
-source $ZSH/oh-my-zsh.sh
-
-# Better history
-# Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys
-# autoload -U up-line-or-beginning-search
-# autoload -U down-line-or-beginning-search
-# zle -N up-line-or-beginning-search
-# zle -N down-line-or-beginning-search
-# bindkey "^[[A" up-line-or-beginning-search # Up
-# bindkey "^[[B" down-line-or-beginning-search # Down
-
-# zsh-autosuggestions
-bindkey '^[[[CT' autosuggest-accept
-bindkey '^[[[CE' autosuggest-execute
-HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='fg=magenta,bold'
-HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='fg=white,bold'
-HISTORY_SUBSTRING_SEARCH_GLOBBING_FLAGS=''
+# source $ZSH/oh-my-zsh.sh
 
 setopt INTERACTIVE_COMMENTS
